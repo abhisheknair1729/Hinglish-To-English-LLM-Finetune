@@ -1,11 +1,11 @@
 ### Finetune a foundational LLM model to translate *Hinglish* text to English text
 
-For the purposes of this project, Hinglish means Hindi text written using Germanic characters and the occasional English word thrown in.
+For the purposes of this project, Hinglish means Hindi written in the Germanic script with some English words.
 
 
 #### Model details
 
-I chose the [OpenHathi](https://huggingface.co/sarvamai/OpenHathi-7B-Hi-v0.1-Base) 7B parameter model from [Sarvam AI](https://www.sarvam.ai/) as my pretrained base. Two major reasons behind this choice:
+I chose the [OpenHathi](https://huggingface.co/sarvamai/OpenHathi-7B-Hi-v0.1-Base) 7B parameter model from [Sarvam AI](https://www.sarvam.ai/) as my pretrained base. Two major reasons:
 
 1. It is pretrained on Hindi, English and Hinglish. Therefore, during finetuning, we can focus on teaching the model about translation, rather than the underlying structure of the languages themselves. This is important because Hindi has a different word-order as compared to English and we would require a lot of training data to teach the model this new sentence structure.
 
@@ -17,7 +17,7 @@ I used a [English-To-Hinglish](https://huggingface.co/datasets/findnitai/english
 
 #### Blog post I followed
 
-There are plenty of blog posts describing how to finetune a model. I followed https://www.philschmid.de/fine-tune-llms-in-2024-with-trl.
+I followed https://www.philschmid.de/fine-tune-llms-in-2024-with-trl.
 
 #### Additional notes
 
